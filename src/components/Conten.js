@@ -55,11 +55,13 @@ const Conten = () => {
             {/* <p>ITEMS HELLO WORLD</p> */}
             {Data.map((item, idx) => (
               <div key={idx} className="p-2">
-                <div className="flex gap-2 items-center">
-                  <img
-                    className="xl:w-28 brightness-75 rounded-xl w-[30rem] overflow-hidden md:w-32 md:h-32 xl:h-28 xl:object-cover"
-                    src={item.avatar}
-                  />
+                <div className="flex gap-2  items-center">
+                  <div className="xl:w-52 xl:overflow-hidden ">
+                    <img
+                      className=" sm:w-48 brightness-75 rounded-xl w-[20rem] overflow-hidden md:w-32 md:h-32 xl:h-28 xl:object-cover"
+                      src={item.avatar}
+                    />
+                  </div>
                   <div className="">
                     <p className="bg-yellow-400 p-1 rounded-lg w-20 uppercase">
                       {item.category}
